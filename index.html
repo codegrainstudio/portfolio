@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected computer vision and agentic AI projects from Muhammad Khalid.">
+  <title>Muhammad Khalid | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container navigation" aria-label="Main navigation">
+      <a class="monogram" href="#main" aria-label="Muhammad Khalid home">MK<span>.</span></a>
+      <div class="nav-links">
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+        <button id="theme-toggle" type="button" hidden>Light mode</button>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="container hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="label">APPLIED AI / NLP / WEB DEVELOPMENT</p>
+        <h1 id="hero-title">Muhammad <span>Khalid.</span></h1>
+        <p class="intro">I’m an AI and software developer creating useful digital products—from computer vision and NLP solutions to RAG-powered education tools, conversational agents, and modern web applications.</p>
+        <a class="primary" href="#work">Explore projects</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <canvas id="orb"></canvas>
+        <div class="art-caption"><span>APPLIED AI</span><span>PROJECT PORTFOLIO</span></div>
+      </div>
+    </section>
+    <section class="container work" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div>
+          <p class="label">SELECTED WORK</p>
+          <h2 id="work-title">Projects with purpose.</h2>
+        </div>
+        <p class="section-description">Applied AI, education technology, and workflow automation.</p>
+      </div>
+      <div class="projects">
+        <article class="project">
+          <div class="project-art vision" aria-hidden="true">
+            <span class="art-label">PLANTDOC / OBJECT DETECTION</span>
+            <div class="target"><span>Plant disease</span><div class="leaf"></div></div>
+            <div class="variants"><span>YOLOv8n</span><span>YOLO11n</span></div>
+          </div>
+          <div class="project-copy">
+            <p class="label">COMPUTER VISION</p>
+            <h3>Plant disease detection</h3>
+            <p>I compared two lightweight YOLO models on PlantDoc to study how they locate plant disease in images.</p>
+            <details>
+              <summary>View project details</summary>
+              <p>The Colab notebook covers dataset preparation, training, and evaluation. It compares YOLOv8n with YOLO11n on the same detection task.</p>
+            </details>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-art workflow" aria-hidden="true">
+            <span class="art-label">E-COMMERCE / SIMULATED WORKFLOW</span>
+            <div class="nodes">
+              <span><b>Product</b><small>Catalog agent</small></span>
+              <span><b>Inventory</b><small>Stock agent</small></span>
+              <span><b>Order</b><small>Order agent</small></span>
+              <span><b>Delivery</b><small>Delivery agent</small></span>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="label">AGENTIC AI</p>
+            <h3>Multi-agent order management</h3>
+            <p>A team demo showing how specialized agents coordinate product, inventory, order, and delivery tasks.</p>
+            <details>
+              <summary>View project details</summary>
+              <p>The workflow uses simulated orders to demonstrate sequential execution, parallel tasks, conditional routing, and tool use. The presentation covers AutoGen and Microsoft Agent Framework.</p>
+            </details>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-art school" aria-hidden="true">
+            <span class="art-label">SINDH TEXTBOOK BOARD / AI ASSESSMENT</span>
+            <div class="quiz-scene">
+              <div class="book-stack">
+                <span>SCIENCE</span>
+                <span>TEXTBOOK</span>
+                <span>SINDH BOARD</span>
+              </div>
+              <div class="quiz-paper">
+                <b>AI-GENERATED QUIZ</b>
+                <span><i></i> Plant cells</span>
+                <span><i></i> Photosynthesis</span>
+                <span><i></i> Growth &amp; health</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="label">EDTECH / RAG SYSTEM</p>
+            <h3>School quiz management platform</h3>
+            <p>An AI-powered assessment system that converts Sindh textbook board books into quizzes and supports teachers, students, and administrators.</p>
+            <details>
+              <summary>View project details</summary>
+              <p>The platform uses RAG and embeddings to turn textbook content into MCQs. Administrators manage teachers and assign subjects, teachers create and conduct online tests, and students receive automatically graded results sent to their teachers.</p>
+            </details>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-art messaging" aria-hidden="true">
+            <span class="art-label">CUSTOMER MESSAGING / ORDER AUTOMATION</span>
+            <div class="order-scene">
+              <div class="phone-chat">
+                <b>Customer chat</b>
+                <span class="bubble incoming">Hi, I’d like to order.</span>
+                <span class="bubble outgoing">Sure! What would you like?</span>
+                <span class="bubble incoming">One lunch combo, please.</span>
+              </div>
+              <div class="pos-ticket">
+                <b>POS ORDER</b>
+                <span>Lunch combo</span>
+                <span class="ticket-line"></span>
+                <small>Order received</small>
+              </div>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="label">CONVERSATIONAL AI / HOSPITALITY</p>
+            <h3>WhatsApp order-taking agent</h3>
+            <p>A customer-facing agent for restaurants, hotels, and other businesses that answers enquiries and helps customers place orders through WhatsApp.</p>
+            <details>
+              <summary>View project details</summary>
+              <p>The agent handles customer conversations, captures order details, and sends orders to the business’s point-of-sale (POS) system, helping staff manage incoming requests in one workflow.</p>
+            </details>
+          </div>
+        </article>
+        <article class="project">
+          <div class="project-art school-chat" aria-hidden="true">
+            <span class="art-label">SCHOOL CHATBOT / GUARDED AI</span>
+            <div class="chat-modes">
+              <span><i>01</i><b>Study Buddy</b><small>Learn step by step</small></span>
+              <span><i>02</i><b>General Assistant</b><small>Short, clear answers</small></span>
+            </div>
+          </div>
+          <div class="project-copy">
+            <p class="label">EDTECH / AI CHATBOT</p>
+            <h3>Guardrailed school chatbot</h3>
+            <p>A school-focused chatbot with two response styles: a Study Buddy for learning through explanations and a General Assistant for concise answers.</p>
+            <details>
+              <summary>View project details</summary>
+              <p>Guardrails help keep responses appropriate for a school setting. The Study Buddy explains topics in a more detailed, reading-oriented style, while the General Assistant is designed to respond briefly and accurately.</p>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="container about" id="about" aria-labelledby="about-title">
+      <div><p class="label">ABOUT</p><h2 id="about-title">Building useful technology.</h2></div>
+      <div>
+        <p>I work across applied AI, NLP, and web development, turning ideas into tools for learning, customer service, and everyday workflows.</p>
+        <ul class="skills" aria-label="Tools and technologies"><li>Python</li><li>React</li><li>JavaScript</li><li>PHP</li><li>NLP</li><li>YOLO</li><li>RAG</li><li>Embeddings</li><li>Google Colab</li><li>AutoGen</li><li>VS Code</li></ul>
+      </div>
+    </section>
+  </main>
+  <footer class="container footer"><span>Muhammad Khalid</span><a href="#main">Back to top</a></footer>
+</body>
+</html>
