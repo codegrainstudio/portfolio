@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Selected computer vision and agentic AI projects from Muhammad Khalid.">
   <title>Muhammad Khalid | Portfolio</title>
+  <link rel="icon" href="mk-logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="portfolio.js" defer></script>
 </head>
@@ -12,10 +13,11 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="container navigation" aria-label="Main navigation">
-      <a class="monogram" href="#main" aria-label="Muhammad Khalid home">MK<span>.</span></a>
+      <a class="monogram brand" href="#main" aria-label="Muhammad Khalid home"><img class="brand-mark" src="mk-logo.svg" width="40" height="40" alt=""><span class="brand-name">Muhammad Khalid</span></a>
       <div class="nav-links">
         <a href="#work">Projects</a>
         <a href="#about">About</a>
+        <a href="#contact">Contact</a>
         <button id="theme-toggle" type="button" hidden>Light mode</button>
       </div>
     </nav>
@@ -26,11 +28,12 @@
         <p class="label">APPLIED AI / NLP / WEB DEVELOPMENT</p>
         <h1 id="hero-title">Muhammad <span>Khalid.</span></h1>
         <p class="intro">I’m an AI and software developer creating useful digital products—from computer vision and NLP solutions to RAG-powered education tools, conversational agents, and modern web applications.</p>
-        <a class="primary" href="#work">Explore projects</a>
+        <div class="hero-actions"><a class="primary" href="#work">Explore projects</a><a class="secondary" href="#contact">Get in touch</a></div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <canvas id="orb"></canvas>
-        <div class="art-caption"><span>APPLIED AI</span><span>PROJECT PORTFOLIO</span></div>
+      <div class="hero-art">
+        <canvas id="orb" aria-hidden="true"></canvas>
+        <div class="orb-ring" aria-hidden="true"></div>
+        <button class="orb-replay" id="orb-replay" type="button" hidden>Replay sphere <span aria-hidden="true">↻</span></button>
       </div>
     </section>
     <section class="container work" id="work" aria-labelledby="work-title">
@@ -52,10 +55,8 @@
             <p class="label">COMPUTER VISION</p>
             <h3>Plant disease detection</h3>
             <p>I compared two lightweight YOLO models on PlantDoc to study how they locate plant disease in images.</p>
-            <details>
-              <summary>View project details</summary>
-              <p>The Colab notebook covers dataset preparation, training, and evaluation. It compares YOLOv8n with YOLO11n on the same detection task.</p>
-            </details>
+            <ul class="skills project-tags" aria-label="Project topics"><li>PlantDoc</li><li>YOLOv8n</li><li>YOLO11n</li></ul>
+            <a class="project-link" href="plantdoc.html" aria-label="Explore Plant disease detection">Explore project <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="project">
@@ -72,10 +73,8 @@
             <p class="label">AGENTIC AI</p>
             <h3>Multi-agent order management</h3>
             <p>A team demo showing how specialized agents coordinate product, inventory, order, and delivery tasks.</p>
-            <details>
-              <summary>View project details</summary>
-              <p>The workflow uses simulated orders to demonstrate sequential execution, parallel tasks, conditional routing, and tool use. The presentation covers AutoGen and Microsoft Agent Framework.</p>
-            </details>
+            <ul class="skills project-tags" aria-label="Project topics"><li>AutoGen</li><li>Microsoft Agent Framework</li><li>Tool use</li></ul>
+            <a class="project-link" href="order-management.html" aria-label="Explore Multi-agent order management">Explore project <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="project">
@@ -99,10 +98,8 @@
             <p class="label">EDTECH / RAG SYSTEM</p>
             <h3>School quiz management platform</h3>
             <p>An AI-powered assessment system that converts Sindh textbook board books into quizzes and supports teachers, students, and administrators.</p>
-            <details>
-              <summary>View project details</summary>
-              <p>The platform uses RAG and embeddings to turn textbook content into MCQs. Administrators manage teachers and assign subjects, teachers create and conduct online tests, and students receive automatically graded results sent to their teachers.</p>
-            </details>
+            <ul class="skills project-tags" aria-label="Project topics"><li>RAG</li><li>Embeddings</li><li>Online assessment</li></ul>
+            <a class="project-link" href="quiz-platform.html" aria-label="Explore School quiz management platform">Explore project <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="project">
@@ -127,10 +124,8 @@
             <p class="label">CONVERSATIONAL AI / HOSPITALITY</p>
             <h3>WhatsApp order-taking agent</h3>
             <p>A customer-facing agent for restaurants, hotels, and other businesses that answers enquiries and helps customers place orders through WhatsApp.</p>
-            <details>
-              <summary>View project details</summary>
-              <p>The agent handles customer conversations, captures order details, and sends orders to the business’s point-of-sale (POS) system, helping staff manage incoming requests in one workflow.</p>
-            </details>
+            <ul class="skills project-tags" aria-label="Project topics"><li>WhatsApp</li><li>Conversational AI</li><li>POS</li></ul>
+            <a class="project-link" href="whatsapp-agent.html" aria-label="Explore WhatsApp order-taking agent">Explore project <span aria-hidden="true">↗</span></a>
           </div>
         </article>
         <article class="project">
@@ -145,10 +140,8 @@
             <p class="label">EDTECH / AI CHATBOT</p>
             <h3>Guardrailed school chatbot</h3>
             <p>A school-focused chatbot with two response styles: a Study Buddy for learning through explanations and a General Assistant for concise answers.</p>
-            <details>
-              <summary>View project details</summary>
-              <p>Guardrails help keep responses appropriate for a school setting. The Study Buddy explains topics in a more detailed, reading-oriented style, while the General Assistant is designed to respond briefly and accurately.</p>
-            </details>
+            <ul class="skills project-tags" aria-label="Project topics"><li>Guardrails</li><li>Education</li><li>Chatbot</li></ul>
+            <a class="project-link" href="school-chatbot.html" aria-label="Explore Guardrailed school chatbot">Explore project <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
@@ -158,6 +151,16 @@
       <div>
         <p>I work across applied AI, NLP, and web development, turning ideas into tools for learning, customer service, and everyday workflows.</p>
         <ul class="skills" aria-label="Tools and technologies"><li>Python</li><li>React</li><li>JavaScript</li><li>PHP</li><li>NLP</li><li>YOLO</li><li>RAG</li><li>Embeddings</li><li>Google Colab</li><li>AutoGen</li><li>VS Code</li></ul>
+      </div>
+    </section>
+    <section class="container contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        <div>
+          <p class="label">CONTACT</p>
+          <h2 id="contact-title">Let’s connect.</h2>
+          <p>Find Muhammad Khalid’s portfolio and code on GitHub.</p>
+        </div>
+        <a class="primary" href="https://github.com/codegrainstudio">GitHub · @codegrainstudio</a>
       </div>
     </section>
   </main>
